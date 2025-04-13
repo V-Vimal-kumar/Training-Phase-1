@@ -1,0 +1,168 @@
+/* Apply a gradient background */
+body {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Task Manager Container */
+.taskManager {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+/* Title */
+h1 {
+  font-style: oblique;
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+}
+
+/* Search Box */
+.searchBox {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Task Input Fields */
+.taskInput {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.taskName,
+.taskCategory,
+.taskDate {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add Button */
+.addBtn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.addBtn:hover {
+  background: linear-gradient(45deg, #ff4b4b, #ff6e40);
+}
+
+/* Task List */
+.taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Task Items */
+.taskItem {
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Category-Based Colors */
+.taskItem.Work {
+  background: #d1e7ff;
+  color: #0056b3;
+}
+
+.taskItem.Personal {
+  background: #ffd1dc;
+  color: #b3005e;
+}
+
+.taskItem.Others {
+  background: #d4f4dd;
+  color: #006400;
+}
+
+/* Task Details */
+.taskDetails {
+  flex: 1;
+}
+
+/* Action Buttons */
+.deleteBtn,
+.editBtn,
+.saveBtn {
+  padding: 6px 12px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Delete Button */
+.deleteBtn {
+  background: #ff4d4d;
+}
+
+.deleteBtn:hover {
+  background: #d63030;
+}
+
+/* Edit Button */
+.editBtn {
+  background: #28a745;
+}
+
+.editBtn:hover {
+  background: #218838;
+}
+
+/* Save Button */
+.saveBtn {
+  background: #007bff;
+}
+
+.saveBtn:hover {
+  background: #0056b3;
+}
+
+/* Editable Fields */
+.editName,
+.editCategory,
+.editDate {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* No Tasks Message */
+.noTasks {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
