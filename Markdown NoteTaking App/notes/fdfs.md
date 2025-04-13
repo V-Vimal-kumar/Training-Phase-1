@@ -1,1 +1,0 @@
-gbu ....aluma doluma..!
