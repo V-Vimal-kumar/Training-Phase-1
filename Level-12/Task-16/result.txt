@@ -1,0 +1,6 @@
+Student Averages:
+vk: 87.67
+sk: 81.33
+ak: 90.33
+
+Top Performer: ak with an average of 90.33

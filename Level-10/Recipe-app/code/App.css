@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.category {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background: #4caf50;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  width: 300px;
+  max-width: 90%;
+  margin: 1rem auto;
+  display: block;
+}
+
+.detail img {
+  max-width: 100%;
+}
