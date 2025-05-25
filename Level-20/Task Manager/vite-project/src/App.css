@@ -1,0 +1,152 @@
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="date"],
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.add-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+.events-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.event-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.event-card h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.event-card ul {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.event-card li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.priority {
+  font-weight: bold;
+  color: #d9534f;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: red;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  color: darkred;
+}
+
+.priority-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: goldenrod;
+  margin-left: 10px;
+}
+
+.priority-button:hover {
+  color: gold;
+}
+body {
+  background-image: url("https://images5.alphacoders.com/475/475843.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
