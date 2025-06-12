@@ -1,0 +1,47 @@
+.weather-section-clean {
+  background-color: #e6f4ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.weather-icon-clean {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.temp {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.city {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.details {
+  background-color: #ffffffee;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  margin: auto;
+  width: fit-content;
+}
+
+.details h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #222;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
