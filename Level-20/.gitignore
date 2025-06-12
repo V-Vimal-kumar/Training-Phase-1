@@ -1,0 +1,49 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# dotenv environment files
+.env
+.env.*  # in case of .env.development, .env.production, etc.
+
+# Dependency directories
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build outputs
+dist/
+build/
+client/build/
+server/dist/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Testing coverage
+coverage/
+
+# Optional cache files
+.nyc_output/
+.cache/
+.next/
+out/
+
+# MongoDB dump files
+dump/
+
+# TypeScript specific
+*.tsbuildinfo
+
+# Misc
+*.pem
