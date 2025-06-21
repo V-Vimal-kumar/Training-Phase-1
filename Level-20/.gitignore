@@ -11,7 +11,7 @@ Thumbs.db
 
 # dotenv environment files
 .env
-.env.*  # in case of .env.development, .env.production, etc.
+.env.*  
 
 # Dependency directories
 node_modules/

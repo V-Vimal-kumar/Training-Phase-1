@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Weather from './weather';
 import Search from './search';
 import Forcast from './forcast';
@@ -8,6 +8,11 @@ import './App.css';
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
+
+  const DEFAULT_CITY = {
+    value: "13.0827 80.2707", 
+    label: "Chennai, IN"
+  };
 
   const handleOnChange = (searchData) => {
     if (!searchData?.value || typeof searchData.value !== 'string') {
@@ -35,6 +40,35 @@ function App() {
       })
       .catch((err) => console.log(err));
   };
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const lat = position.coords.latitude;
+          const lon = position.coords.longitude;
+
+          handleOnChange({
+            value: `${lat} ${lon}`,
+            label: "Your Location"
+          });
+        },
+        (error) => {
+          console.error("Error getting location:", error);
+          handleOnChange({
+            value: "13.0827 80.2707", // fallback to Chennai
+            label: "Chennai, IN"
+          });
+        }
+      );
+    } else {
+      handleOnChange({
+        value: "13.0827 80.2707",
+        label: "Chennai, IN"
+      });
+    }
+  }, []);
+
 
   return (
     <div className="app">
